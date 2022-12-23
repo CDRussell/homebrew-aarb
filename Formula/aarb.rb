@@ -9,9 +9,13 @@ class Aarb < Formula
   version "0.1.0"
 
   def install
-    ENV["HOMEBREW_TEMP_CDR"] = "hello"
-    bin.install Dir["*"]
-    prefix.install "./bin/AndroidAsanaBridge"
-    system "echo", ENV["HOMEBREW_TEMP_CDR"]
+    #ENV["HOMEBREW_TEMP_CDR"] = "hello"
+    
+    libexec.install Dir["*"]
+    bin.write_exec_script libexec/"AsanaReleaseBridge"
+
+    #bin.install Dir["*"]
+    #prefix.install "./bin/AndroidAsanaBridge"
+    #system "echo", ENV["HOMEBREW_TEMP_CDR"]
   end
 end
