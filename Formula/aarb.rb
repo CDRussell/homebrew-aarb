@@ -9,7 +9,7 @@ class Aarb < Formula
   version "0.1.0"
 
   def install
-    ENV["TEMP_CDR"] = "hello"
+    ENV["HOMEBREW_TEMP_CDR"] = "hello"
     libexec.install Dir["*"]
   end
 end
