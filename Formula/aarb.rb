@@ -11,5 +11,6 @@ class Aarb < Formula
   def install
     ENV["HOMEBREW_TEMP_CDR"] = "hello"
     libexec.install Dir["*"]
+    system "echo", ENV["HOMEBREW_TEMP_CDR"]
   end
 end
