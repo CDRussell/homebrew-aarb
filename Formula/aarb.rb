@@ -9,8 +9,7 @@ class Aarb < Formula
   version "0.1.0"
 
   def install
-    libexec.install Dir["*"]
     ENV["TEMP_CDR"] = "hello"
-    #bin.install "aarb"
+    libexec.install Dir["*"]
   end
 end
