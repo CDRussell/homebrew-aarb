@@ -11,6 +11,7 @@ class Aarb < Formula
   def install
     ENV["HOMEBREW_TEMP_CDR"] = "hello"
     bin.install Dir["*"]
+    bin.install "AndroidAsanaBridge"
     system "echo", ENV["HOMEBREW_TEMP_CDR"]
   end
 end
