@@ -9,6 +9,7 @@ class Aarb < Formula
   version "0.1.0"
 
   def install
-    bin.install "aarb"
+    libexec.install Dir["*"]
+    #bin.install "aarb"
   end
 end
