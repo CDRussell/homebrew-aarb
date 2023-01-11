@@ -15,7 +15,7 @@ class Aarb < Formula
     bin.write_exec_script (libexec/"aarb")
 
     #bin.install Dir["*"]
-    bin.install "bin/AndroidAsanaBridge"
+    bin.install "bin"
     #system "echo", ENV["HOMEBREW_TEMP_CDR"]
 
 # this ALMOST WORKS!?   https://stackoverflow.com/questions/60201206/how-to-install-a-whole-directory-of-files-with-homebrew
