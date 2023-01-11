@@ -14,6 +14,8 @@ class Aarb < Formula
     libexec.install Dir["*"]
     bin.write_exec_script libexec/"AsanaReleaseBridge"
 
+    system "helloworld.sh"
+
     #bin.install Dir["*"]
     #prefix.install "./bin/AndroidAsanaBridge"
     #system "echo", ENV["HOMEBREW_TEMP_CDR"]
