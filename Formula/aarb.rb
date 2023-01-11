@@ -11,7 +11,7 @@ class Aarb < Formula
   def install
     #ENV["HOMEBREW_TEMP_CDR"] = "hello"
     
-    libexec.install Dir["bin"]
+    libexec.install Dir["bin/*"]
     bin.write_exec_script (libexec/"aarb")
 
     #bin.install Dir["*"]
