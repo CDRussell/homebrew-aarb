@@ -4,9 +4,9 @@
 class Aarb < Formula
   desc "aarb"
   homepage "https://github.com/CDRussell/homebrew-aarb"
-  url "https://github.com/CDRussell/homebrew-aarb/releases/download/0.1.0/aarb.tar.gz"  
-  sha256 "b9f27a7aa8fe2bf67f64b6cfa5c0200a6ba9e94e1f2da2a80f0a9d361e5d5ddb"  
-  version "0.1.0"
+  url "https://github.com/CDRussell/homebrew-aarb/releases/download/0.0.1/aarb.tar"  
+  sha256 "a0569bff7fe05bcea73881e23b8ce6fe9ee263a7b8e26e55b053e0a358be7bca"  
+  version "0.0.1"
 
   def install
     #ENV["HOMEBREW_TEMP_CDR"] = "hello"
@@ -17,5 +17,7 @@ class Aarb < Formula
     #bin.install Dir["*"]
     #prefix.install "./bin/AndroidAsanaBridge"
     #system "echo", ENV["HOMEBREW_TEMP_CDR"]
+
+# this ALMOST WORKS!?   https://stackoverflow.com/questions/60201206/how-to-install-a-whole-directory-of-files-with-homebrew
   end
 end
