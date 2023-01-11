@@ -12,10 +12,10 @@ class Aarb < Formula
     #ENV["HOMEBREW_TEMP_CDR"] = "hello"
     
     libexec.install Dir["*"]
-    bin.write_exec_script (libexec/"aarb")
+    bin.write_exec_script (libexec/"bin/aarb")
 
     #bin.install Dir["*"]
-    bin.install "bin"
+    #bin.install "bin"
     #system "echo", ENV["HOMEBREW_TEMP_CDR"]
 
 # this ALMOST WORKS!?   https://stackoverflow.com/questions/60201206/how-to-install-a-whole-directory-of-files-with-homebrew
