@@ -11,7 +11,7 @@ class Aarb < Formula
   def install
     #ENV["HOMEBREW_TEMP_CDR"] = "hello"
     
-    libexec.install Dir["bin/*"]
+    libexec.install Dir["*"]
     bin.write_exec_script (libexec/"AndroidAsanaBridge")
 
     #bin.install Dir["*"]
