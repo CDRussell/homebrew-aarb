@@ -5,7 +5,7 @@ class Aarb < Formula
   desc "aarb"
   homepage "https://github.com/CDRussell/homebrew-aarb"
   url "https://github.com/CDRussell/homebrew-aarb/releases/download/0.0.1/aarb-0.0.1.tar"  
-  sha256 "28bc20255d0e031d1570888a8a27438450fe7748b5872b810186fcdf5db7eb70"
+  sha256 "fd008b1fbce25c0aae961e4ef92e08c9101408babf0cc80f506f8059804d825b"
   version "0.0.1"
 
   def install
