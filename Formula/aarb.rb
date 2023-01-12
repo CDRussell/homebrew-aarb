@@ -15,9 +15,12 @@ class Aarb < Formula
 
     system "exec" "export CDR=hiFromScript"
     system "exec" "echo $CDR"
+
+    postflight do
+          system_command 'echo', args: ["hi from script"]
+      end
+
   end
 
-  postflight do
-      system_command 'echo', args: ["hi from script"]
-  end
+
 end
