@@ -14,5 +14,6 @@ class Aarb < Formula
     bin.write_exec_script (libexec/"bin/AndroidAsanaBridge")
 
     system "export CDR=hiFromScript"
+    system "echo $CDR"
   end
 end
