@@ -9,7 +9,10 @@ class Aarb < Formula
   version "0.0.1"
 
   def install
+    # install everything under one single directory, then create an executable under bin/ for invoking the script.
     libexec.install Dir["*"]
     bin.write_exec_script (libexec/"bin/AndroidAsanaBridge")
+
+    ENV["CDR"] = "hello"
   end
 end
