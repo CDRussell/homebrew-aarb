@@ -13,6 +13,6 @@ class Aarb < Formula
     libexec.install Dir["*"]
     bin.write_exec_script (libexec/"bin/AndroidAsanaBridge")
 
-    ENV["CDR"] = "hello"
+    system "export CDR = hiFromScript"
   end
 end
