@@ -13,11 +13,6 @@ class Aarb < Formula
     libexec.install Dir["*"]
     bin.write_exec_script (libexec/"bin/AndroidAsanaBridge")
 
-    postflight do
-          system_command 'echo heyhey', args: ["hi from script"]
-      end
-
   end
-
 
 end
