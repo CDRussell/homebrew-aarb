@@ -4,9 +4,9 @@
 class Aarb < Formula
   desc "aarb"
   homepage "https://github.com/CDRussell/homebrew-aarb"
-  url "https://github.com/CDRussell/homebrew-aarb/releases/download/0.0.5/aarb-0.0.5.tar"
-  sha256 "dd36f226106ff42e586f24bc8ac7c67361bec80afdc20964d5eac6992c3f4900"
-  version "0.0.5"
+  url "https://github.com/CDRussell/homebrew-aarb/releases/download/0.0.6/aarb-0.0.6.tar"
+  sha256 "57ec2c45927c5810854cec769026c9382de4f35f9a9d41c9dd9b297d36af9f99"
+  version "0.0.6"
 
   def install
     # install everything under one single directory, then create an executable under bin/ for invoking the script.
